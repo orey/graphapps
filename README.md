@@ -10,3 +10,6 @@ This folder contains rough notes that can be more or less connected to some proj
   * [Basic graph transformations](basic-graph-transformations.md)
   * [Basic semantic graph transformations](basic-semantic-graph-transformations.md)
   
+# License
+
+Those documents are available under the [GNU FDL](GNU_FDL.md) license.
