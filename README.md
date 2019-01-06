@@ -2,7 +2,7 @@
 
 ## What is GraphApps?
 
-GraphApps is a reserach project that aims to use graphs and graph transformations in the context of software engineering.
+GraphApps is a research project that aims to use graphs and graph transformations in the context of software engineering.
 
 ## First period (2013-2018): Graph-oriented programming and technical debt
 
@@ -17,21 +17,19 @@ You can read the following pages:
 ### Important points
 
   * Object-oriented and RDBMS-based software engineering generates a lot of couplings (structural and temporal). Those couplings are, for us, at the center of the technical debt problem.
-  * Another programming model called graph-oriented programming can enable to limit the technical debt to its smallest (semantic level).
-  * This programming model is using graph tranformations to model business logic (at least the one that is not encoded into the graph).
+  * Another programming model called graph-oriented programming enables to limit the technical debt to its minimal expression (semantic level). This programming model uses graph databases.
+  * This programming model is using graph transformations to model business logic, on top of encoding knowledge in the graph topology.
   
-The way we represent knowledge in current software engineering is largely sub-optimal, and we believe that the technical debt is a problem created by bad engineering practices and not attached to the business semantics.
+The way we represent knowledge in current software engineering is largely sub-optimal, and we believe that the technical debt is a problem created by bad engineering practices and tools (OOP/RDBMS) and not attached to the business semantics.
 
-This way of seeing things will explain the research directions.
-
-### Other notes
+### Other notes (2018)
 
   * [A DSL to check the graph topology](DSL-for-graph-topology-checks.md)
   * [Graph transformation applicability](graph-transformation-applicability.md)
 
 ### Basic graph transformations (2018-now)
 
-As graph transformations can be composed easily, the idea is to build a set of basic graph transformations.
+As graph transformations can be composed easily, the idea is to build a set of basic graph transformations as a foundation for applications.
 
 The paper [Basic graph transformations](basic-graph-transformations.md) is linked to a Python (ongoing) project available in a [github repo named "graph"](https://github.com/orey/graph).
 
