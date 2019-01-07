@@ -57,3 +57,4 @@ Also ongoing: it is quite difficult to properly design in the context of RDF/RDF
 # License
 
 Those documents are available under the [GNU FDL](GNU_FDL.md) license.
+
