@@ -50,6 +50,10 @@ The paper [Basic semantic graph transformations](basic-semantic-graph-transforma
 
 Also ongoing: it is quite difficult to properly design in the context of RDF/RDFS (without even talking Owl). This ongoing paper [RDF design patterns](rdf-design-patterns.md) is a first attempt.
 
+## Other notes linked to graphs
+
+  * [Graphs and semantic data in industry](industry-data.md)
+
 # License
 
 Those documents are available under the [GNU FDL](GNU_FDL.md) license.
