@@ -1,5 +1,7 @@
 # GraphApps
 
+![GraphApps.io](logo-graphapps-io.png "GraphApps.io")
+
 ## What is GraphApps?
 
 GraphApps is a research project that aims to use graphs and graph transformations in the context of software engineering.
