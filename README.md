@@ -53,6 +53,7 @@ Also ongoing: it is quite difficult to properly design in the context of RDF/RDF
 ## Other notes linked to graphs
 
   * [Graphs and semantic data in industry](industry-data.md)
+  * Using graph transformations at the grammar level, the case of RDBMS schema transformation for re-semantization: [Grammar graph transformations](grammar-graph-transformation.md)
 
 # License
 
