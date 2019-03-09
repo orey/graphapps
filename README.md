@@ -49,8 +49,8 @@ The paper [Graphs and semantic data in industry](industry-data.md) talks about t
   * Using graph transformations at the grammar level, the case of RDBMS schema transformation for re-semantization: [Grammar graph transformations](grammar-graph-transformation.md)
   * [A DSL to check the graph topology](DSL-for-graph-topology-checks.md)
   * [Graph transformation applicability](graph-transformation-applicability.md)
-
-Also ongoing: it is quite difficult to properly design in the context of RDF/RDFS (without even talking Owl). This ongoing paper [RDF design patterns](rdf-design-patterns.md) is a first attempt.
+  * Also ongoing: it is quite difficult to properly design in the context of RDF/RDFS (without even talking Owl). This ongoing paper [RDF design patterns](rdf-design-patterns.md) is a first attempt.
+  * [Notes on Description Logic](notes-dl.md)
 
 ----
 
