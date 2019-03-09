@@ -8,9 +8,20 @@ The following notes are taken from the following video.
 
 ## Terminology
 
-Slide 29; Around 45minutes.
+Slide 29; Around 45 minutes.
 
 The vocabulary of description logic is not the same as the vocabulary of semantic web.
 
   * Ontology => TBox - Terminology Box
   * Fact base => ABox - Assertional Box
+
+In DL, we have:
+
+  * Concepts: that corresponds to an assertion with 1 free variable
+    * For instance `Human(x)`
+  * Role: that correspondonds to an assertion with 2 free variables
+    * For instance `Father(x, y)`
+
+The basic constructs of on ontology (almost the ontology meta-grammar) can be expressed in DL like that:
+
+  * C1 &sube; C2 &forall; &rArr;  
