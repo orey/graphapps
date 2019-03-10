@@ -24,4 +24,4 @@ In DL, we have:
 
 The basic constructs of on ontology (almost the ontology meta-grammar) can be expressed in DL like that:
 
-  * C1 &sube; C2 &forall; &rArr;  
+  * C1 &sube; C2 &forall; &rArr;
