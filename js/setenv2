@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Use: . setenv.sh"
+echo $PATH
+NODEPATH=/home/olivier/Software/node-v10.15.3-linux-x64/bin
+echo $NODEPATH
+PATH=$NODEPATH:$PATH
+#PATH=/home/olivier/Software/node-v10.15.3-linux-x64/bin:$PATH
+echo $PATH
+
