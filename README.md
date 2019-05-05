@@ -2,9 +2,11 @@
 
 ![GraphApps.io](logo-graphapps-io.png "GraphApps.io")
 
+Updated: May 5 2019.
+
 ## 1 What is GraphApps?
 
-GraphApps is a research project that aims to use graphs and graph transformations in the context of software engineering, like application building or data migration.
+GraphApps is a research project that aims to use graphs and graph transformations in the context of software engineering, like application building, data migration or data visualization. It is focused on attributed directed graphs and RDF semantic graphs.
 
 
 ## 2 First period (2013-2018): Graph-oriented programming and technical debt
@@ -15,8 +17,12 @@ You can read the following pages:
 
   * [First article on graph oriented programming](https://orey.github.io/papers/graph/first-article/)
   * [Slides from the ICGT 2018 conference](https://orey.github.io/papers/graph/staf-icgt2018/)
+  
+The code that was produced during this period is under copyright and so, unfortunately, it cannot be disclosed.
 
 ### 2.2 Important points
+
+Those works put into focus several results:
 
   * Object-oriented and RDBMS-based software engineering generates a lot of couplings (structural and temporal). Those couplings are, for us, at the center of the technical debt problem.
   * Another programming model called graph-oriented programming enables to limit the technical debt to its minimal expression (semantic level). This programming model uses graph databases.
@@ -31,20 +37,57 @@ The way we represent knowledge in current software engineering is *largely sub-o
 
 As graph transformations can be composed easily, the idea is to build a set of basic graph transformations as a foundation for applications.
 
-The paper [Basic graph transformations](basic-graph-transformations.md) is linked to a Python (ongoing) project available in a [github repo named "graph"](https://github.com/orey/graph).
+Two repos are currently under development to study those dimensions:
 
-See also the ongoing documentation page directly [in the repo](https://github.com/orey/graph/blob/master/graph_transformations/README.md).
+  * The [graph](https://github.com/orey/graph) repo: The paper [Basic graph transformations](basic-graph-transformations.md) explains the intention of this repo. This repo is in Python. See also [a page in the repo](https://github.com/orey/graph/blob/master/graph_transformations/README.md).
+  * The [graphappsjs](https://github.com/orey/graphappsjs) repo, which is targeting the same objective but analyzes the link of the programming language in that problem.
+  
+  The underlying topic under those repos is also the capability of building a graph-oriented programming language. A good idea would be to propotype a DSL of graph-oriented programming language with Common Lisp.
 
 ### 3.2 Semantic data conversion 
 
 The article [Arguments for semantic use in data conversion](arguments_semantic.md "arguments") gathers the various reasons why using a semantic approach can be interesting.
 
-The paper [Basic semantic graph transformations](basic-semantic-graph-transformations.md) aims at defining a set of basic graph transformations. It is a kind of specification for the continuation of the development of the [rdftools](https://github.com/orey/rdftools) repo.
+The paper [Basic semantic graph transformations](basic-semantic-graph-transformations.md) aims at defining a set of basic graph transformations.
 
 The paper [Graphs and semantic data in industry](industry-data.md) talks about the opportunity of using RDF approaches to cenvert efficiently industrial data.
 
 
-## 4. Other notes linked to graphs
+### 3.3 Graph data visualization
+
+#### 3.3.1 Converting CSV data into RDF
+
+Before being able to use semantic graph transformation on data, we must be able to convert CSV data to RDF. This is the objective of the `csv2rdf.py` tool available in the [rdftools](https://github.com/orey/rdftools) repo.
+
+There are two options proposed by this tool to convert CSV data:
+
+  * The default conversion option,
+  * The semantic grammar option, which enables to determine precisely the triple construction.
+  
+By reusing the same semantic grammar, multiple sources of data can be gathered in the same semantic database (current tests are using [Apache Jena](http://jena.apache.org/)).
+
+#### 3.3.2 Visualizing RDF data
+
+*Per se* RDF data are quite complicated to represent because of the hierachy of predicates. The following tools do not consider this hierarchy and generate one edge per predicate while generating only one node for the subject and object. 
+
+The [rdfviz](https://github.com/orey/rdfviz) repo contains two options of visualization:
+
+  * `GML` conversion, to be imported in tools like [Yed](https://www.yworks.com/products/yed) or [Cytoscape](https://cytoscape.org/);
+  * `dot` conversion to be displayed with [GraphViz](http://graphviz.org/).
+
+#### 3.3.3 Exploring RDF graph data through neighborhoods
+
+In the original GraphApps project, a lot of efforts were put in the use of node neighborhood as a basic element of knowledge navigation.
+
+The [ontovisu](https://github.com/orey/ontovisu) repo aims at enabling the neighborhood-based visual navigation in RDF graph data. It is based on :
+
+  * [Node](https://nodejs.org/en/),
+  * [Apache Jena](http://jena.apache.org/)),
+  * [Cytoscape js graph library](https://js.cytoscape.org/).
+  
+Development of this repo is ongoing.
+
+## 4. Various notes linked to graphs
 
   * Using graph transformations at the grammar level, the case of RDBMS schema transformation for re-semantization: [Grammar graph transformations](grammar-graph-transformation.md)
   * [A DSL to check the graph topology](DSL-for-graph-topology-checks.md)
