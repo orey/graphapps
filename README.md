@@ -68,7 +68,7 @@ The following draft papers are exploring the semantic data conversion approach:
 
 #### Converting CSV data into RDF
 
-Before being able to use semantic graph transformation on data, we must be able to convert CSV data to RDF. This is the objective of the `csv2rdf.py` tool available in the [rdftools](https://github.com/orey/rdftools) repo.
+Before being able to use semantic graph transformation on data, we must be able to convert CSV data to RDF. This is the objective of the `csv2rdf.py` tool available in the [csv2rdf](https://github.com/orey/csv2rdf) repo.
 
 There are two options proposed by this tool to convert CSV data:
 
