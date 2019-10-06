@@ -1,8 +1,8 @@
 # GraphApps
 
-![GraphApps.io](logo-graphapps-io.png "GraphApps.io")
+![GraphApps.tech](logo-graphapps-io-v2.png "GraphApps.tech")
 
-Updated: May 5 2019.
+Updated: October 6 2019.
 
 ----
 
