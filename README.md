@@ -1,10 +1,6 @@
 # GraphApps
 
-![GraphApps.tech](logo-graphapps-io-v2.png "GraphApps.tech")
-
-The pages have moved here: [papers](https://orey.github.io/papers/research) 
-
-See also the [papers](https://orey.github.io/papers) on [orey.github.io](https://orey.github.io).
+The pages have moved here: [papers](https://orey.github.io/papers/). See the [index](https://orey.github.io/papers/research/index-research/) research page for more information.
 
 ----
 
